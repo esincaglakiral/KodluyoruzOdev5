@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wine | Türk Şarapları</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+         body{
+           display: block;
+           margin-top: 0;
+           margin-left: 0;
+           margin-right: 0;
+           background: rgb(0,0,0);
+           background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(127,13,13,1) 50%, rgba(176,13,13,1) 100%);
+        }
+
+         header{
+            background: rgb(0,0,0);
+            background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(127,13,13,1) 50%, rgba(176,13,13,1) 100%);
+            margin-top: 0;     
+            text-align: center;
+           
+         }
+         .aboutBaslik{
+            font-size: 100px;
+            font-family: Garamond, serif;
+            margin-top: 0;
+            padding-top: 50px;
+         }
+         .aboutAltBaslik{
+            font-size: 35px;
+            font-family: Garamond, serif;
+            margin-bottom: 0;
+            padding-bottom: 20px;
+            
+         }
+         
+         /************************* Navbar Menu ****************************/
+         #menu {
+            width: 100%;
+            margin: 0;
+            padding: 10px 0 0 0;
+            list-style: none;
+            background-color: rgba(0, 0, 0 , 0.60);
+            border-radius: 5px;
+            font-size: 17.5px;
+            
+        }
+
+        #menu li {
+           float: left;
+           padding: 10px 10px 10px 10px;
+           position: relative;
+           
+        }
+        #menu li:hover{
+           background-color: #770e0e;
+           background-image: linear-gradient(0deg, rgba(185,7,7,1) 0%, rgba(28,0,0,1) 100%);
+           margin-top:auto;
+        }
+
+
+        #menu a {
+           float: left;
+           height: 25px;
+           padding: 0 25px;
+           color: #ffeecf;
+           text-transform: uppercase;
+           font-family: Garamond, serif;
+           text-decoration: none;
+           text-shadow: 0 1px 0 #000;
+        }
+
+        #menu li:hover > a {
+           color: #fafafa;
+        }
+
+        *html #menu li a:hover { /* IE6 */
+           color: #fafafa;
+        }
+
+        #menu li:hover > ul {
+           display: block;
+        }
+
+
+       /* Sub-menu */
+        #menu ul {
+           list-style: none;
+           margin: 0;
+           padding: 0;
+           display: none;
+           position: absolute;
+           top: 35px;
+           left: 0;
+           z-index: 99999;
+           background-color: rgba(0, 0, 0 , 0.75);
+           -moz-border-radius: 5px;
+           border-radius: 5px;
+        }
+
+        #menu ul li {
+           float: none;
+           margin: 0;
+           padding: 0;
+           display: block;
+           box-shadow: 0 1px 0 #111111,
+                       0 2px 0 #777777;
+           font-size: 19px;
+           font-family: Garamond, serif;
+        }
+
+        #menu ul li:last-child {
+           box-shadow: none;
+        }
+
+        #menu ul a {
+           padding: 10px;
+           height: auto;
+           line-height: 1;
+           display: block;
+           white-space: nowrap;
+           float: none;
+           text-transform: none;
+        }
+
+        *html #menu ul a { /* IE6 */
+           height: 10px;
+           width: 150px;
+        }
+
+        *:first-child+html #menu ul a { /* IE7 */
+           height: 10px;
+           width: 150px;
+        }
+
+        #menu ul a:hover {
+           background-color: #770e0e;
+           background-image: linear-gradient(0deg, rgba(185,7,7,1) 0%, rgba(28,0,0,1) 100%);
+        }
+
+        #menu ul li:first-child a {
+           border-radius: 5px 5px 0 0;
+        }
+
+        #menu ul li:first-child a:after {
+           content: '';
+           position: absolute;
+           left: 30px;
+           top: -8px;
+           width: 0;
+           height: 0;
+           border-left: 5px solid transparent;
+           border-right: 5px solid transparent;
+           border-bottom: 8px solid #444;
+        }
+
+        #menu ul li:first-child a:hover:after {
+           border-bottom-color: #770e0e;
+        }
+
+        #menu ul li:last-child a {
+           border-radius: 0 0 5px 5px;
+        }
+
+        /* Clear floated elements */
+        #menu:after {
+           visibility: hidden;
+           display: block;
+           font-size: 0;
+           content: " ";
+           clear: both;
+           height: 0;
+        }
+
+        * html #menu             { zoom: 1; } /* IE6 */
+        *:first-child+html #menu { zoom: 1; } /* IE7 */
+
+        .img1{
+            width: 400px;
+            height: 450px;
+            float: left;
+            border-radius: 20%;
+            opacity: 0.8;
+            margin: 30px, 30px, 30px, 30px;
+            padding-left: 30px;
+           
+        }
+
+        .img1:hover{
+           opacity: 0.5;
+        }
+        .sarap1{
+         padding-top: 50px;
+        }
+
+          /****************************************** footer **************************************/
+
+          footer{
+            text-align: center;
+            padding: 3px;
+            background-color: black;
+            color: white;
+            margin-bottom: 0;
+         }
+
+        
+
+    </style>
+</head>
+<body>
+   <header style="background: url(img/glasses.jpg);">
+      
+      <h1 class="aboutBaslik" style="color: black;">KAV</h1>
+      <h3 class="aboutAltBaslik" style=" color: #ffeecf;">Türkiyenin En Büyük Şarap Tadım Atölyesi...</h3>
+   </header>
+
+    <main>
+        <article>
+           <ul id="menu">
+               <li><a href="home.html">Home</a></li>
+               <li><a href="about.html">Hakkımızda</a></li>
+               <li><a href="restaurant.html">Restaurantımız</a></li>
+               <li><a href="markalar.html">Markalarımız</a>
+                   <ul>
+                      <li><a href="turkish_wines.html">Dünyaca Bilinen Türk Şarap Markaları</a></li>
+                      <li><a href="foreign_wines.html">Dünyaca Ünlü Yabancı Şarap Markaları</a></li>
+                   </ul>
+               </li>
+            
+               <li><a href="order.html">Sipariş Sayfası</a></li>
+               <li><a href="contact.html">İletişim</a></li>
+           </ul>
+        </article>
+    </main>
+
+    <div class="sarap1">
+      <p style="color:#ffeecf; font-size: 25px; font-family: Garamond, serif; margin-right: 400px;">
+         <img class="img1"  src="img/Kayra-Buzbağ-Rezerv.jpg" alt="" style="margin-right:20px;">
+         <b> KAYRA BUZBAĞ REZERV</b> <br><br>
+         Elazığ’ın Öküzgözü ve Diyarbakır’ın Boğazkere üzümlerinden yerinde yapılıp 24 ay meşe fıçılarda dinlendirilmiş, kısıtlı filtrasyon uygulanmış. 13.5 derece alkollü. <br>
+
+         Nar renginde. Vişne, mürdüm eriği, kuru meyve, pekmez, pestil ve baharat tonları hissediliyor. Canlı ve parlak koyu bordo görünümlü... Burunda hafif fıçı çağrışımlarını zengin kırmızı orman meyveleri izliyor. Gövdeli, güçlü tanenli, dengeli bir kırmızı. Damak burunla uyumlu ortanın biraz üzerinde dolgun gövdeli güçlü tanenler güçlü asit.. Üçgenin üstlerde kurulduğu güçlü kuvvetli bir kırmızı şarap. Uzun finalinde kırmızı orman meyveleri ve vanilya dokunuşları kalıyor. Meşe fıçı tonları eski rekolteleri kadar belirgin değil. <br>
+          2-3 yıl içinde karafa aktarılarak yudumlanmalı, kuru patlıcan dolması, alinazik, patlıcan kebabı, Urfa kebabı gibi az acılı güneydoğu yemeklerine eşlik etmeli.
+
+       </p>
+    </div>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <div class="sarap2">
+      <p style="color:#ffeecf; font-size: 25px; font-family: Garamond, serif; margin-right: 400px;">
+         <img class="img1"  src="img/Gordias-Kalecik-Karası.jpg" alt="" style="margin-right:20px;">
+         <b>GORDİAS KALECİK KARASI</b> <br><br>
+         Burunda çilek, vişne ve kahve aromalarının yanı sıra hafif biberli bir nota var. Oldukça güzel bir başlangıç! <br>
+         Bu şarabın yapısında dayanılmaz bir hafiflik var. Tanenler çok yumuşaktır. Kakao ve tarçın gibi çok hassas baharatlar, hatta muz gibi görünüyor… <br>
+         Uzun bitişte bazı yeşil biber notaları bu güzel şaraba çok uygun fiyata unutulmaz bir tat.. uzun içiminin yanı sıra bordo kadifemsi paletiyle de cok ilgi cekici bir saraptir.<br>
+         Gordias‘ın Kalecik Karaları, üzümün karakterini yansıtan ve İç Anadolu coğrafyasından lezzetini almış güzel kırmızılar, eğer bu üzümü seviyorsanız şans vermelisiniz. 
+
+       </p>
+    </div>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <div class="sarap3">
+      <p style="color:#ffeecf; font-size: 25px; font-family: Garamond, serif; margin-right: 400px;">
+         <img class="img1"  src="img/Selendi-Akhisar-Blend.jpg" alt="" style="margin-right:20px;">
+         <b>SELENDİ AKHİSAR BLEND</b> <br><br>
+         Akhisar'ın yüksek rakımlı Sarnıç köyü bağlarının organik yetiştirilen üzümlerinden yapılmış olup Fransız meşe fıçılarda 18 ay dinlendirilmiştir. 15.000 şişe üretilmiştir. <br>
+
+         Burunda baharatlı koyu meyveler ve mürdüm eriği notaları; damakta kadifemsi ve tam gövdeli bir kırmızı. Dana kaburga, mantarlı risotto veya bitter çikolata ile denenmeli.
+         <ul style="list-style-type: none; color:#ffeecf; font-size: 25px; font-family: Garamond, serif; margin-right: 400px;"> <b>Üzüm:</b> 
+            <li>%38 Cabernet Sauvignon </li>
+            <li>%25 Merlot</li>
+            <li>%24 Shiraz</li>
+            <li>%13 Cabernet Franc</li>
+         </ul>
+
+       </p>
+    </div>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <footer style="background-color: rgba(0, 0, 0 , 0.60);">
+      <p style="color:#ffeecf; font-size: 25px; font-family: Garamond, serif;">Author: Esin Çağla KIRAL<br>
+      <a style="color:#ffeecf; font-size: 25px; font-family: Garamond, serif;" href="address: Beyoğlu Galata">Beyoğlu Galata</a><br>
+      <a style="color:#ffeecf; font-size: 25px; font-family: Garamond, serif;" href="mailto:info@kav.com">info@kav.com</a></p><br>
+      <p style="opacity: 0.6;">Şarap Sanayi A.Ş. Kuruluşudur © 2019 Tüm hakları saklıdır.</p>
+
+    </footer>
+
+
+
+
+    
+</body>
+</html>
