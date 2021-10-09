@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wine | Markalar</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+         body{
+           display: block;
+           margin-top: 0;
+           margin-left: 0;
+           margin-right: 0;
+           background: rgb(0,0,0);
+           background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(127,13,13,1) 50%, rgba(176,13,13,1) 100%);
+        }
+
+         header{
+            background: rgb(0,0,0);
+            background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(127,13,13,1) 50%, rgba(176,13,13,1) 100%);
+            margin-top: 0;     
+            text-align: center;
+           
+         }
+         .aboutBaslik{
+            font-size: 100px;
+            font-family: Garamond, serif;
+            margin-top: 0;
+            padding-top: 50px;
+         }
+         .aboutAltBaslik{
+            font-size: 35px;
+            font-family: Garamond, serif;
+            margin-bottom: 0;
+            padding-bottom: 20px;
+            
+         }
+         
+         /************************* Navbar Menu ****************************/
+         #menu {
+            width: 100%;
+            margin: 0;
+            padding: 10px 0 0 0;
+            list-style: none;
+            background-color: rgba(0, 0, 0 , 0.60);
+            border-radius: 5px;
+            font-size: 17.5px;
+            
+        }
+
+        #menu li {
+           float: left;
+           padding: 10px 10px 10px 10px;
+           position: relative;
+           
+        }
+        #menu li:hover{
+           background-color: #770e0e;
+           background-image: linear-gradient(0deg, rgba(185,7,7,1) 0%, rgba(28,0,0,1) 100%);
+           margin-top:auto;
+        }
+
+
+        #menu a {
+           float: left;
+           height: 25px;
+           padding: 0 25px;
+           color: #ffeecf;
+           text-transform: uppercase;
+           font-family: Garamond, serif;
+           text-decoration: none;
+           text-shadow: 0 1px 0 #000;
+        }
+
+        #menu li:hover > a {
+           color: #fafafa;
+        }
+
+        *html #menu li a:hover { /* IE6 */
+           color: #fafafa;
+        }
+
+        #menu li:hover > ul {
+           display: block;
+        }
+
+
+       /* Sub-menu */
+        #menu ul {
+           list-style: none;
+           margin: 0;
+           padding: 0;
+           display: none;
+           position: absolute;
+           top: 35px;
+           left: 0;
+           z-index: 99999;
+           background-color: rgba(0, 0, 0 , 0.75);
+           -moz-border-radius: 5px;
+           border-radius: 5px;
+        }
+
+        #menu ul li {
+           float: none;
+           margin: 0;
+           padding: 0;
+           display: block;
+           box-shadow: 0 1px 0 #111111,
+                       0 2px 0 #777777;
+           font-size: 19px;
+           font-family: Garamond, serif;
+        }
+
+        #menu ul li:last-child {
+           box-shadow: none;
+        }
+
+        #menu ul a {
+           padding: 10px;
+           height: auto;
+           line-height: 1;
+           display: block;
+           white-space: nowrap;
+           float: none;
+           text-transform: none;
+        }
+
+        *html #menu ul a { /* IE6 */
+           height: 10px;
+           width: 150px;
+        }
+
+        *:first-child+html #menu ul a { /* IE7 */
+           height: 10px;
+           width: 150px;
+        }
+
+        #menu ul a:hover {
+           background-color: #770e0e;
+           background-image: linear-gradient(0deg, rgba(185,7,7,1) 0%, rgba(28,0,0,1) 100%);
+        }
+
+        #menu ul li:first-child a {
+           border-radius: 5px 5px 0 0;
+        }
+
+        #menu ul li:first-child a:after {
+           content: '';
+           position: absolute;
+           left: 30px;
+           top: -8px;
+           width: 0;
+           height: 0;
+           border-left: 5px solid transparent;
+           border-right: 5px solid transparent;
+           border-bottom: 8px solid #444;
+        }
+
+        #menu ul li:first-child a:hover:after {
+           border-bottom-color: #770e0e;
+        }
+
+        #menu ul li:last-child a {
+           border-radius: 0 0 5px 5px;
+        }
+
+        /* Clear floated elements */
+        #menu:after {
+           visibility: hidden;
+           display: block;
+           font-size: 0;
+           content: " ";
+           clear: both;
+           height: 0;
+        }
+
+
+        * html #menu             { zoom: 1; } /* IE6 */
+        *:first-child+html #menu { zoom: 1; } /* IE7 */
+
+        .buton1{
+         float: left;
+         background:#140908;
+         background: linear-gradient(0deg, rgb(63, 28, 28) 0%, rgba(28,0,0,1) 100%);
+         padding:50px 25px 50px 25px;
+         margin-left: 200px;
+         text-decoration:none;
+         color:#ffeecf;
+         font:bold 30px Garamond, serif;
+         border-radius: 50px;
+         text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.75);
+         border:3px solid rgb(75, 25, 25);
+         box-shadow: 0 1px 2px rgba(0, 0, 0, 0.75);
+        }
+
+        .buton2{
+         float: right;
+         background:#140908;
+         background: linear-gradient(0deg, rgb(63, 28, 28) 0%, rgba(28,0,0,1) 100%);
+         padding:50px 25px 50px 25px;
+         margin-right: 200px;
+         text-decoration:none;
+         color:#ffeecf;
+         font:bold 30px Garamond, serif;
+         border-radius: 50px;
+         text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.75);
+         border:3px solid rgb(75, 25, 25);
+         box-shadow: 0 1px 2px rgba(0, 0, 0, 0.75);
+        }
+        
+        .text{
+           text-align: center;
+           font-family: Garamond, serif;
+           font-size: 25px;
+           color: #ffeecf;
+        }
+
+        
+         /****************************************** footer **************************************/
+
+         footer{
+            text-align: center;
+            padding: 3px;
+            background-color: black;
+            color: white;
+            margin-bottom: 0;
+         }
+
+        
+
+    </style>
+</head>
+<body>
+
+   <header style="background: url(img/glasses.jpg);">
+      
+      <h1 class="aboutBaslik" style="color: black;">KAV</h1>
+      <h3 class="aboutAltBaslik" style=" color: #ffeecf;">Türkiyenin En Büyük Şarap Tadım Atölyesi...</h3>
+   </header>
+
+    <main>
+        <article>
+           <ul id="menu">
+               <li><a href="home.html">Home</a></li>
+               <li><a href="about.html">Hakkımızda</a></li>
+               <li><a href="restaurant.html">Restaurantımız</a></li>
+               <li><a href="markalar.html">Markalarımız</a>
+                   <ul>
+                      <li><a href="turkish_wines.html">Dünyaca Bilinen Türk Şarap Markaları</a></li>
+                      <li><a href="foreign_wines.html">Dünyaca Ünlü Yabancı Şarap Markaları</a></li>
+                   </ul>
+               </li>
+             
+               <li><a href="order.html">Sipariş Sayfası</a></li>
+               <li><a href="contact.html">İletişim</a></li>
+           </ul>
+        </article>
+
+
+
+      </main>
+      <br><br><br><br><br>
+        <div>
+
+         <a href="foreign_wines.html" class="buton1">Dünyaca Ünlü Yabancı Marka Şaraplar</a>
+         <a href="turkish_wines.html" class="buton2">Dünyaca Bilinen Yerli Şaraplarımız</a>
+
+        </div>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+        <div class="text">
+           <p>
+            <b> – Barel, cabernet sauvignon & merlot 2011</b> <br>
+
+            <em> Damakta koyu meyve aromaları ve baharatlı tonlara sahip, içimi kolay, dengeli bir şarap. Fiyatına göre beklenilenin çok daha üstünde bir kaliteye sahip.</em>
+            <br><br>
+            <b> – Suvla, cabernet sauvignon & merlot 2011</b><br>
+            
+            <em>Suvla son yıllarda Türk şarapçılığın yükselen değeri oldu. Suvla’nın bence en iyi olduğu nokta ise yaptığı kupajlar. Bu şarap için şuan yorum yok. Suvla ile ilgili detaylı tadım notları yakında blog’da.</em> 
+            
+            <br><br>
+           <b> – Uluca Broyka, cabernet sauvignon & merlot 2011</b><br>
+            
+           <em> Uluca şaraplarının üst segmenti olan Broyka damakta karakterli yapısı ile içimi keyifli bir şarap. tanenli yapısı ile kırmızı etlerin yanında çok yakışıyor. </em> 
+            
+            <br><br>
+           <b> – Pamukkale Meridies, kalecik karası & shiraz 2011</b><br>
+            
+           <em>eşsiz bir tat..</em> 
+            
+            <br><br>
+           <b>– Barel, shiraz 2013 (IWC silver medal)</b><br>
+            
+           <em> Makul fiyatlarda iyi şarap içilebileceğinin en güzel örneklerinden Barel şaraplarının bu şarabı aldığı ödül ile kendini uluslararası platformda da kanıtlamış.</em>
+            
+            <br><br>
+           <b> – Pamukkale Anfora, öküzgözü 2013</b><br>
+            
+          <em> Öküzgözü üzümünün meyvemsi tonlarının dominant olduğu, içimi kolay ve damakta güzel aromalar bırakan bir şarap.</em> 
+            
+            <br><br>
+           <b> – Yazgan Mahra, boğazkere & öküzgözü 2011</b><br>
+            
+           <em> Hafif gövdeli, damakta bitimi kısa, domates soslu yemeklerle ile ideal.</em>
+           </p>
+        </div>
+
+      <br><br><br><br><br><br><br><br><br><br> <br><br><br><br>
+
+      <footer style="background-color: rgba(0, 0, 0 , 0.60);">
+        <p style="color:#ffeecf; font-size: 25px; font-family: Garamond, serif;">Author: Esin Çağla KIRAL<br>
+        <a style="color:#ffeecf; font-size: 25px; font-family: Garamond, serif;" href="address: Beyoğlu Galata">Beyoğlu Galata</a><br>
+        <a style="color:#ffeecf; font-size: 25px; font-family: Garamond, serif;" href="mailto:info@kav.com">info@kav.com</a></p><br>
+        <p style="opacity: 0.6;">Şarap Sanayi A.Ş. Kuruluşudur © 2019 Tüm hakları saklıdır.</p>
+  
+      </footer>
+
+    
+</body>
+</html>
