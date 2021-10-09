@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wine | Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+         body{
+           display: block;
+           margin-top: 0;
+           margin-left: 0;
+           margin-right: 0;
+           background: rgb(0,0,0);
+           background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(127,13,13,1) 50%, rgba(176,13,13,1) 100%);
+        }
+
+         header{
+            background: rgb(0,0,0);
+            background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(127,13,13,1) 50%, rgba(176,13,13,1) 100%);
+            margin-top: 0;     
+            text-align: center;
+           
+         }
+         .aboutBaslik{
+            font-size: 100px;
+            font-family: Garamond, serif;
+            margin-top: 0;
+            padding-top: 50px;
+         }
+         .aboutAltBaslik{
+            font-size: 35px;
+            font-family: Garamond, serif;
+            margin-bottom: 0;
+            padding-bottom: 20px;
+            
+         }
+         
+         /************************* Navbar Menu ****************************/
+         #menu {
+            width: 100%;
+            margin: 0;
+            padding: 10px 0 0 0;
+            list-style: none;
+            background-color: rgba(0, 0, 0 , 0.60);
+            border-radius: 5px;
+            font-size: 17.5px;
+            
+        }
+
+        #menu li {
+           float: left;
+           padding: 10px 10px 10px 10px;
+           position: relative;
+           
+        }
+        #menu li:hover{
+           background-color: #770e0e;
+           background-image: linear-gradient(0deg, rgba(185,7,7,1) 0%, rgba(28,0,0,1) 100%);
+           margin-top:auto;
+        }
+
+
+        #menu a {
+           float: left;
+           height: 25px;
+           padding: 0 25px;
+           color: #ffeecf;
+           text-transform: uppercase;
+           font-family: Garamond, serif;
+           text-decoration: none;
+           text-shadow: 0 1px 0 #000;
+        }
+
+        #menu li:hover > a {
+           color: #fafafa;
+        }
+
+        *html #menu li a:hover { /* IE6 */
+           color: #fafafa;
+        }
+
+        #menu li:hover > ul {
+           display: block;
+        }
+
+
+       /* Sub-menu */
+        #menu ul {
+           list-style: none;
+           margin: 0;
+           padding: 0;
+           display: none;
+           position: absolute;
+           top: 35px;
+           left: 0;
+           z-index: 99999;
+           background-color: rgba(0, 0, 0 , 0.75);
+           -moz-border-radius: 5px;
+           border-radius: 5px;
+        }
+
+        #menu ul li {
+           float: none;
+           margin: 0;
+           padding: 0;
+           display: block;
+           box-shadow: 0 1px 0 #111111,
+                       0 2px 0 #777777;
+           font-size: 19px;
+           font-family: Garamond, serif;
+        }
+
+        #menu ul li:last-child {
+           box-shadow: none;
+        }
+
+        #menu ul a {
+           padding: 10px;
+           height: auto;
+           line-height: 1;
+           display: block;
+           white-space: nowrap;
+           float: none;
+           text-transform: none;
+        }
+
+        *html #menu ul a { /* IE6 */
+           height: 10px;
+           width: 150px;
+        }
+
+        *:first-child+html #menu ul a { /* IE7 */
+           height: 10px;
+           width: 150px;
+        }
+
+        #menu ul a:hover {
+           background-color: #770e0e;
+           background-image: linear-gradient(0deg, rgba(185,7,7,1) 0%, rgba(28,0,0,1) 100%);
+        }
+
+        #menu ul li:first-child a {
+           border-radius: 5px 5px 0 0;
+        }
+
+        #menu ul li:first-child a:after {
+           content: '';
+           position: absolute;
+           left: 30px;
+           top: -8px;
+           width: 0;
+           height: 0;
+           border-left: 5px solid transparent;
+           border-right: 5px solid transparent;
+           border-bottom: 8px solid #444;
+        }
+
+        #menu ul li:first-child a:hover:after {
+           border-bottom-color: #770e0e;
+        }
+
+        #menu ul li:last-child a {
+           border-radius: 0 0 5px 5px;
+        }
+
+        /* Clear floated elements */
+        #menu:after {
+           visibility: hidden;
+           display: block;
+           font-size: 0;
+           content: " ";
+           clear: both;
+           height: 0;
+        }
+
+        * html #menu             { zoom: 1; } /* IE6 */
+        *:first-child+html #menu { zoom: 1; } /* IE7 */
+
+        /****************************************** article **************************************/
+
+        .winehouse1{
+            width: 400px;
+            height: 450px;
+            float: left;
+            border-radius: 20%;
+            opacity: 0.8;
+            margin: 20px, 20px, 20px, 20px;
+            padding-left: 30px;  
+      }
+
+
+        .winehouse2{
+
+            width: 400px;
+            height: 450px;
+            float: left;
+            border-radius: 20%;
+            opacity: 0.8;
+            margin: 20px, 20px, 20px, 20px;
+            padding-left: 30px;  
+       }
+
+
+       
+         .winehouse3{
+
+            width: 400px;
+            height: 450px;
+            float: left;
+            border-radius: 20%;
+            opacity: 0.8;
+            margin: 20px, 20px, 20px, 20px;
+            padding-left: 30px;  
+         }
+
+
+         /****************************************** footer **************************************/
+
+        footer{
+            text-align: center;
+            padding: 3px;
+            background-color: black;
+            color: white;
+            margin-bottom: 0;
+         }
+
+    </style>
+</head>
+
+
+<body>
+   <header style="background: url(img/glasses.jpg);">
+      
+      <h1 class="aboutBaslik" style="color: black;">KAV</h1>
+      <h3 class="aboutAltBaslik" style=" color: #ffeecf;">Türkiyenin En Büyük Şarap Tadım Atölyesi...</h3>
+   </header>
+
+    <main>
+        <article>
+           <ul id="menu">
+               <li><a href="home.html">Home</a></li>
+               <li><a href="about.html">Hakkımızda</a></li>
+               <li><a href="restaurant.html">Restaurantımız</a></li>
+               <li><a href="markalar.html">Markalarımız</a>
+                   <ul>
+                      <li><a href="turkish_wines.html">Dünyaca Bilinen Türk Şarap Markaları</a></li>
+                      <li><a href="foreign_wines.html">Dünyaca Ünlü Yabancı Şarap Markaları</a></li>
+                   </ul>
+               </li>
+             
+               <li><a href="order.html">Sipariş Sayfası</a></li>
+               <li><a href="contact.html">İletişim</a></li>
+           </ul>
+        </article>
+      
+        
+        <div class="class1">
+         <p style="color:#ffeecf; font-size: 25px; font-family: Garamond, serif; margin-right: 400px;">
+           <img class="winehouse1"  src="img/şarapevi.jpg" alt="" style="margin-right:20px;">
+            Şarap tadım atölyemizle beraber <strong>Kav Restaurant</strong> adlı restorantımız bulunmaktadır. Özel rezervasyonla yerinizi ayırtabilirsiniz. Talep yoğunluğundan dolayı en az 3 gün önce rezervasyon yapılmasını tavsiye ediyoruz. Menülerimiz ise A'Lacarte Restaurant olduğumuz için değişkenlik göstermektedir. Galata’nın gölgesinde sunduğumuz zengin A'Lacarte menümüzde damak zevkinize göre farklı lezzetler bulabilir, zarif ve yeni lezzetler keşfedebilirsiniz. Eşsiz bağ atmosferinde, sevdiklerinizle bir araya geleceğiniz ve yeni bağlar kuracağınız mutlu sofralar hazırlıyoruz.
+
+            Davet organizasyonları, toplantılar, nişan-düğün yemekleri ve farklı etkinlikler için de bizimle iletişime geçebilirsiniz.
+
+         </p>
+
+        </div>
+        <br><br><br><br><br><br><br><br><br><br>
+        <div class="class2">
+         <p style="color:#ffeecf; font-size: 25px; font-family: Garamond, serif; margin-right: 200px;">
+            <img class="winehouse2"  src="img/sarapevi2.jpg" alt="" style="margin-right:20px;">
+            Yemeklerimizin mevsimsel malzemeleri tarladan mutfağımıza geliyor.
+
+            İtalyan mutfak mirasının verdiği ilhamla tasarlanan yemeklerimizin her biri Kav Restaurant’ın karakteristik özelliği olan şarapla yeni bağlar kurmak hedefiyle hazırlanıyor. Bazı yemekler şarap ile pişirilerek, bazı yemekler şarabın damakta bıraktığı notalara eşlik etmek hayaliyle tamamlanıyor. <br><br>
+
+            Çalışma Saatlerimiz: Restoranımız Pazartesi günleri hariç her gün 12.00-24.00 saatleri arasında, Lounge  bölümümüz Pazartesi günleri hariç her gün 12.00-22.00 saatleri arasında hizmetinizdedir.
+
+ 
+
+          </p>
+      </div>
+      <br><br><br><br><br>
+        <div class="class3">
+           
+         <p style="color:#ffeecf; font-size: 25px; font-family: Garamond, serif; margin-right: 200px;">
+            <img class="winehouse3"  src="img/sarapevi3.jpg" alt="" style="margin-right:20px;">
+            <em> " Türkiye’deki Sevilen üzüm bağları ve Şaraphanelerinde, Vice-Échanson Enis Güner de dahil olmak üzere Güner ailesinin üçüncü nesli, üzümlerini yetiştiriyor ve kaliteli şaraplar üretmek için modern şarap yapım tekniklerini kullanıyorlar. Bu şaraplar, tesisin kaliteli yemeklerinin servis edildiği Kav Restaurant’ta menüyü oluşturan yıldızlardır." </em><br><br>
+
+            <em>" İstanbulun kalbi Galata, Kav restoranının mutfak ve bahçelerine yansıyan taze, Ege ve Akdeniz usulü bir yemek pişirme deneyimi yaşıyor. Bu, toprakta yetişen ve çiftçi pazarlarından gelen taze ve yerel ürünler, tarlalarda otlayan hayvanlar ve denizde yüzen balıklarla başlayan bir yemek tasarlama sanatı ile ilgilidir. Hafif bir elle hazırlanan, özgüvenle tatlandırılan ve sıradan sofistike bir şekilde servis edilen yemekler. “</em>
+
+          </p>
+        </div>
+        
+        <br>
+
+    </main>
+
+    <br><br><br><br><br><br><br><br><br><br>
+
+    <footer style="background-color: rgba(0, 0, 0 , 0.60);">
+      <p style="color:#ffeecf; font-size: 25px; font-family: Garamond, serif;">Author: Esin Çağla KIRAL<br>
+      <a style="color:#ffeecf; font-size: 25px; font-family: Garamond, serif;" href="address: Beyoğlu Galata">Beyoğlu Galata</a><br>
+      <a style="color:#ffeecf; font-size: 25px; font-family: Garamond, serif;" href="mailto:info@kav.com">info@kav.com</a></p><br>
+      <p style="opacity: 0.6;">Şarap Sanayi A.Ş. Kuruluşudur © 2019 Tüm hakları saklıdır.</p>
+
+    </footer>
+
+
+
+
+    
+</body>
+</html>
