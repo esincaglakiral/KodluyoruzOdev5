@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wine | About</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+       body{
+           display: block;
+           margin-top: 0;
+           margin-left: 0;
+           margin-right: 0;
+           background: rgb(0,0,0);
+           background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(127,13,13,1) 50%, rgba(176,13,13,1) 100%);
+        }
+
+         header{
+            background: rgb(0,0,0);
+            background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(127,13,13,1) 50%, rgba(176,13,13,1) 100%);
+            margin-top: 0;     
+            text-align: center;
+           
+         }
+         .aboutBaslik{
+            font-size: 100px;
+            font-family: Garamond, serif;
+            margin-top: 0;
+            padding-top: 50px;
+         }
+         .aboutAltBaslik{
+            font-size: 35px;
+            font-family: Garamond, serif;
+            margin-bottom: 0;
+            padding-bottom: 20px;
+            
+         }
+         
+         /************************* Navbar Menu ****************************/
+         #menu {
+            width: 100%;
+            margin: 0;
+            padding: 10px 0 0 0;
+            list-style: none;
+            background-color: rgba(0, 0, 0 , 0.60);
+            border-radius: 5px;
+            font-size: 17.5px;
+            
+        }
+
+        #menu li {
+           float: left;
+           padding: 10px 10px 10px 10px;
+           position: relative;
+           
+        }
+        #menu li:hover{
+           background-color: #770e0e;
+           background-image: linear-gradient(0deg, rgba(185,7,7,1) 0%, rgba(28,0,0,1) 100%);
+           margin-top:auto;
+        }
+
+
+        #menu a {
+           float: left;
+           height: 25px;
+           padding: 0 25px;
+           color: #ffeecf;
+           text-transform: uppercase;
+           font-family: Garamond, serif;
+           text-decoration: none;
+           text-shadow: 0 1px 0 #000;
+        }
+
+        #menu li:hover > a {
+           color: #fafafa;
+        }
+
+        *html #menu li a:hover { /* IE6 */
+           color: #fafafa;
+        }
+
+        #menu li:hover > ul {
+           display: block;
+        }
+
+
+       /* Sub-menu */
+        #menu ul {
+           list-style: none;
+           margin: 0;
+           padding: 0;
+           display: none;
+           position: absolute;
+           top: 35px;
+           left: 0;
+           z-index: 99999;
+           background-color: rgba(0, 0, 0 , 0.75);
+           -moz-border-radius: 5px;
+           border-radius: 5px;
+        }
+
+        #menu ul li {
+           float: none;
+           margin: 0;
+           padding: 0;
+           display: block;
+           box-shadow: 0 1px 0 #111111,
+                       0 2px 0 #777777;
+           font-size: 19px;
+           font-family: Garamond, serif;
+        }
+
+        #menu ul li:last-child {
+           box-shadow: none;
+        }
+
+        #menu ul a {
+           padding: 10px;
+           height: auto;
+           line-height: 1;
+           display: block;
+           white-space: nowrap;
+           float: none;
+           text-transform: none;
+        }
+
+        *html #menu ul a { /* IE6 */
+           height: 10px;
+           width: 150px;
+        }
+
+        *:first-child+html #menu ul a { /* IE7 */
+           height: 10px;
+           width: 150px;
+        }
+
+        #menu ul a:hover {
+           background-color: #770e0e;
+           background-image: linear-gradient(0deg, rgba(185,7,7,1) 0%, rgba(28,0,0,1) 100%);
+        }
+
+        #menu ul li:first-child a {
+           border-radius: 5px 5px 0 0;
+        }
+
+        #menu ul li:first-child a:after {
+           content: '';
+           position: absolute;
+           left: 30px;
+           top: -8px;
+           width: 0;
+           height: 0;
+           border-left: 5px solid transparent;
+           border-right: 5px solid transparent;
+           border-bottom: 8px solid #444;
+        }
+
+        #menu ul li:first-child a:hover:after {
+           border-bottom-color: #770e0e;
+        }
+
+        #menu ul li:last-child a {
+           border-radius: 0 0 5px 5px;
+        }
+
+        /* Clear floated elements */
+        #menu:after {
+           visibility: hidden;
+           display: block;
+           font-size: 0;
+           content: " ";
+           clear: both;
+           height: 0;
+        }
+
+        * html #menu             { zoom: 1; } /* IE6 */
+        *:first-child+html #menu { zoom: 1; } /* IE7 */
+
+
+         #article_baslik{
+            font-size: 40px;
+            color: #ffeecf;
+            font-family: Garamond, serif;
+            text-align: center;
+            opacity: 0.9;
+
+         }
+
+         img{
+            float: left;
+            border-radius: 40px;
+            opacity: 0.8;
+            margin: 20px, 20px, 20px, 20px;
+            padding-left: 30px;
+         }
+         .div1{
+            width: 60%;
+            height: 450px;
+            padding: 20px;
+            float:left;
+            border: 3px solid rgb(31, 18, 18);
+            border-radius: 40px;
+         }
+         .div1 li{
+            padding-top: 10px;
+            padding-bottom: 10px;
+         }
+         footer{
+            text-align: center;
+            padding: 3px;
+            background-color: black;
+            color: white;
+            margin-bottom: 0;
+         }
+
+
+    </style>
+</head>
+<body>
+
+   <!-- Header -->
+   <header style="background: url(img/glasses.jpg);">
+      
+      <h1 class="aboutBaslik" style="color: black;">KAV</h1>
+      <h3 class="aboutAltBaslik" style=" color: #ffeecf;">Türkiyenin En Büyük Şarap Tadım Atölyesi...</h3>
+   </header>
+
+   <!-- navigation menu -->
+   <nav> 
+           <ul id="menu">
+               <li><a href="home.html">Home</a></li>
+               <li><a href="about.html">Hakkımızda</a></li>
+               <li><a href="restaurant.html">Restaurantımız</a></li>
+               <li><a href="markalar.html">Markalarımız</a>
+                   <ul>
+                      <li><a href="turkish_wines.html">Dünyaca Bilinen Türk Şarap Markaları</a></li>
+                      <li><a href="foreign_wines.html">Dünyaca Ünlü Yabancı Şarap Markaları</a></li>
+                   </ul>
+               </li>
+             
+               <li><a href="order.html">Sipariş Sayfası</a></li>
+               <li><a href="contact.html">İletişim</a></li>
+           </ul>
+         </nav>
+
+
+        
+               <article>
+                  <h2 id="article_baslik">Biz Kimiz?</h2>
+
+                  <p style="color:#ffeecf; font-size: 25px; font-family: Garamond, serif;">
+                     <img src="img/atolye.jpg" alt="" style="width:700px;margin-right:20px;">
+                     
+                     1988 yılında İstanbul Beyoğlunda kurulmuş olan <strong>Kavaklıdere Şarap Tadım Atölyesi</strong> 2008 yılında adını <strong>'KAV'</strong> olarak değiştirmiş ve günümüze kadar türkiyenin en büyük şarap tadım atölyesi olmayı sürdürmüştür. Yıl boyunca birlikte hem Türk hem de Dünya şaraplarına dair birçok tadım yaptık. Bölge bölge Türkiye, Anadolu üzümleri, yerli ve yabancı üzümlerin kupajları, eski ve yeni dünya şarapları, liste uzar gider…
+                     Kav Tadım Atölyesi serüvenine 2008 yılında şarap blogu olarak başladı. Zaman içerisinde önce emekledi ardında yürüdü birkaç ödül ile taçlanınca gitgide büyüdü. Şimdi yola gastronomi platformu olarak devam ediyor... Tadım Atölyesi olarak tadım etkinlikleri düzenliyor, ilham verici tarifler veriyor, gastronomi odaklı rotaları anlatıyor ve seyahatler organize ediyoruz. Pandemiden dolayı şarap etkinliklerine ara verdik ama online şarap sohbetleri ile şarap öğrenmeye ve tatmaya devam ediyoruz. Ayrıca sitemizde yeni geliştirilen sipariş sayfasından şarap siparişi de verebilirsiniz artık! 
+                   </p>
+
+                     <div class="div1" style="color:#ffeecf; font-size: 25px; font-family: Garamond, serif;"> 
+                        <ul style="list-style-type: none;"><strong>Sizleri sayfamız ile ilgili daha iyi bilgilendirebilmek amacıyla aşağıdaki listeyi hazırladık: </strong>
+                            <li><a style="color: #ffeecf; text-decoration: underline;" href="markalar.html">Markalarımız</a> sayfasına giderek atolyemizde bulunun yerli ve yabancı ünlü şarap markaları hakkında bilgi sahibi olabilirsiniz.</li>
+                            <li><a style="color: #ffeecf; text-decoration: underline;" href="turkish_wines.html">Dünyaca Bilinen Türk Şarap Markaları</a> sayfasına giderek atolyemizde bulunun dünyaca ünlü yerli şarap markaları hakkında bilgi sahibi olabilirsiniz.</li>
+                            <li><a style="color: #ffeecf; text-decoration: underline;" href="foreign_wines.html">Dünyaca Ünlü Yabancı Şarap Markaları</a> sayfasına giderek atolyemizde bulunun dünyaca ünlü yabancı şarap markaları hakkında bilgi sahibi olabilirsiniz.</li>
+                            <li><a style="color: #ffeecf; text-decoration: underline;" href="restaurant.html">Restaurantımız</a> sayfasına giderek atolyemizde bulunun atölyemizin içinde bulunan restaurantımız ve enfes yemeklerimiz hakkında bilgi sahibi olabilirsiniz.</li>
+                            <li><a style="color: #ffeecf; text-decoration: underline;" href="order.html">Sipariş</a> sayfasına giderek atolyemizde bulunan şarapların fiyatları hakkında bilgisahibi olabilir ve sipariş verebilirsiniz.</li>
+                     </ul>
+                  </div>
+               </article>
+              
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+               <!-- footer altta durmadığı için defalarca br koymak zorunda kaldım ama bu kısmı hallet!!!!!!!! -->
+           
+         <footer style="background-color: rgba(0, 0, 0 , 0.60);">
+               <p style="color:#ffeecf; font-size: 25px; font-family: Garamond, serif;">Author: Esin Çağla KIRAL<br>
+               <a style="color:#ffeecf; font-size: 25px; font-family: Garamond, serif;" href="address: Beyoğlu Galata">Beyoğlu Galata</a><br>
+               <a style="color:#ffeecf; font-size: 25px; font-family: Garamond, serif;" href="mailto:info@kav.com">info@kav.com</a></p>
+               <p style="opacity: 0.6;">Şarap Sanayi A.Ş. Kuruluşudur © 2019 Tüm hakları saklıdır.</p>
+
+         </footer>
+
+</body>
+</html>
