@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kav | Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        html{
+            background: url('img/glasses.jpg');
+            background-size: cover;
+        }
+        body{
+           display: block;
+           margin-top: 0;
+           margin-left: 0;
+           margin-right: 0;
+        }
+
+        .ust_kisim {
+            background: rgb(185,7,7);
+            background: linear-gradient(0deg, rgba(185,7,7,1) 0%, rgba(28,0,0,1) 100%);
+            background-size: 50%;
+            padding-top: 0px;
+            padding-right: 50px;
+            padding-bottom: 0px;
+            padding-left: 50px;
+            text-align: center;
+            opacity: 0.4;
+        }
+
+        .ilkbaslik{
+            font-size: 250px;
+            color: #ffeecf;
+            font-family: Garamond, serif;
+            font-style:unset;  
+            opacity: 1.9;
+        }
+
+        .ikincibaslik{
+            font-size: 50px;
+            color: #ffeecf;  
+            opacity: 100%;
+            font-family: Garamond, serif;
+            
+        }
+
+        #menu {
+            width: 100%;
+            margin: 0;
+            padding: 10px 0 0 0;
+            list-style: none;
+            background-color: rgba(0, 0, 0 , 0.60);
+            border-radius: 5px;
+            font-size: 17.5px;
+            
+        }
+
+        #menu li {
+           float: left;
+           padding: 10px 10px 10px 10px;
+           position: relative;
+           
+           
+        }
+
+        #menu li:hover{
+           background-color: #770e0e;
+           background-image: linear-gradient(0deg, rgba(185,7,7,1) 0%, rgba(28,0,0,1) 100%);
+           margin-top:auto;
+        }
+
+        #menu a {
+           float: left;
+           height: 25px;
+           padding: 0 25px;
+           color: #ffeecf;
+           text-transform: uppercase;
+           font-family: Garamond, serif;
+           text-decoration: none;
+           text-shadow: 0 1px 0 #000;
+        }
+
+        #menu li:hover > a {
+           color: #fafafa;
+
+        }
+
+        *html #menu li a:hover { /* IE6 */
+           color: #fafafa;
+        }
+
+        #menu li:hover > ul {
+           display: block;
+        }
+
+
+       /* Sub-menu */
+        #menu ul {
+           list-style: none;
+           margin: 0;
+           padding: 0;
+           display: none;
+           position: absolute;
+           top: 35px;
+           left: 0;
+           z-index: 99999;
+           background-color: rgba(0, 0, 0 , 0.75);
+           -moz-border-radius: 5px;
+           border-radius: 5px;
+        }
+
+        #menu ul li {
+           float: none;
+           margin: 0;
+           padding: 0;
+           display: block;
+           box-shadow: 0 1px 0 #111111,
+                       0 2px 0 #777777;
+           font-size: 19px;
+           font-family: Garamond, serif;
+        }
+
+        #menu ul li:last-child {
+           box-shadow: none;
+        }
+
+        #menu ul a {
+           padding: 10px;
+           height: auto;
+           line-height: 1;
+           display: block;
+           white-space: nowrap;
+           float: none;
+           text-transform: none;
+        }
+
+        *html #menu ul a { /* IE6 */
+           height: 10px;
+           width: 150px;
+        }
+
+        *:first-child+html #menu ul a { /* IE7 */
+           height: 10px;
+           width: 150px;
+        }
+
+        #menu ul a:hover {
+           background-color: #770e0e;
+           background-image: linear-gradient(0deg, rgba(185,7,7,1) 0%, rgba(28,0,0,1) 100%);
+        }
+
+        #menu ul li:first-child a {
+           border-radius: 5px 5px 0 0;
+        }
+
+        #menu ul li:first-child a:after {
+           content: '';
+           position: absolute;
+           left: 30px;
+           top: -8px;
+           width: 0;
+           height: 0;
+           border-left: 5px solid transparent;
+           border-right: 5px solid transparent;
+           border-bottom: 8px solid #444;
+        }
+
+        #menu ul li:first-child a:hover:after {
+           border-bottom-color: #770e0e;
+        }
+
+        #menu ul li:last-child a {
+           border-radius: 0 0 5px 5px;
+        }
+
+        /* Clear floated elements */
+        #menu:after {
+           visibility: hidden;
+           display: block;
+           font-size: 0;
+           content: " ";
+           clear: both;
+           height: 0;
+        }
+
+        * html #menu             { zoom: 1; } /* IE6 */
+        *:first-child+html #menu { zoom: 1; } /* IE7 */
+
+
+    </style>
+</head>
+<body>
+
+    <main>
+        <article>
+           <ul id="menu">
+               <li><a href="home.html">Home</a></li>
+               <li><a href="about.html">Hakkımızda</a></li>
+               <li><a href="restaurant.html">Restaurantımız</a></li>
+               <li><a href="markalar.html">Markalarımız</a>
+                   <ul>
+                      <li><a href="turkish_wines.html">Dünyaca Bilinen Türk Şarap Markaları</a></li>
+                      <li><a href="foreign_wines.html">Dünyaca Ünlü Yabancı Şarap Markaları</a></li>
+                   </ul>
+               </li>
+             
+               <li><a href="order.html">Sipariş Sayfası</a></li>
+               <li><a href="contact.html">İletişim</a></li>
+           </ul>
+        </article>
+    </main>
+
+    <div class="ust_kisim">
+        <h1 class="ilkbaslik">Kav</h1>
+        <h3 class="ikincibaslik">Türkiyenin En Büyük Şarap Tadım Atölyesi...</h3>
+    </div>
+
+
+    
+</body>
+</html>
